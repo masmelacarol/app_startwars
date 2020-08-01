@@ -1,4 +1,5 @@
 const API = 'http://swapi.dev/api';
+const fetchData = require('../fecthData');
 class Planets {
   data;
   newStructure;
