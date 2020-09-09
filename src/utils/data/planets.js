@@ -7,7 +7,7 @@ class Planets {
 
   async getData() {
     try {
-      let dataStartShips = await fetchData(`${API}/starships`);
+      let dataStartShips = await fetchData(`${API}/starships/`);
       this.data = dataStartShips;
       this.newStucture = await this.createNewStucture(this.data);
       return this.newStucture;
